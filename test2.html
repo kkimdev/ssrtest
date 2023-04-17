@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head id="head">
+    <title>Our Funky HTML Page</title>
+    <meta name="description" content="Our first page" />
+    <!-- <meta name="twitter:card" content="summary_large_image"> -->
+    <meta property="og:title" content="sssssssssssssss" />
+    <meta
+      property="og:image"
+      content="https://corporate.mcdonalds.com/content/dam/sites/corp/nfl/categories/m-logo_108x108.jpg"
+    />
+    <script>
+      let head = document.getElementById("head");
+      const meta0 = document.createElement(`meta`);
+      meta0.setAttribute("name", "twitter:card");
+      meta0.setAttribute("content", "summary_large_image");
+      head.appendChild(meta0);
+      const meta2 = document.createElement("meta");
+      meta2.setAttribute("name", "twitter:image");
+      meta2.setAttribute(
+        "property",
+        "https://corporate.mcdonalds.com/content/dam/sites/corp/nfl/categories/m-logo_108x108.jpg"
+      );
+      head.appendChild(meta2);
+    </script>
+  </head>
+  <body>
+    Content goes here.
+  </body>
+</html>
