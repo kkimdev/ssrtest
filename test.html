@@ -8,8 +8,9 @@
     <script>
       let head = document.getElementById("head");
       const meta = document.createElement(`meta`);
+      meta.setAttribute("property", "og:image");
       meta.setAttribute(
-        "property",
+        "content",
         "https://corporate.mcdonalds.com/content/dam/sites/corp/nfl/categories/m-logo_108x108.jpg"
       );
       head.appendChild(meta);
