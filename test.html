@@ -4,6 +4,7 @@
     <title>Our Funky HTML Page</title>
     <meta name="description" content="Our first page" />
     <meta name="keywords" content="html tutorial template" />
+    <meta name="twitter:card" content="summary_large_image">
     <script>
       let head = document.getElementById("head");
       const meta = document.createElement(`meta`);
@@ -12,6 +13,9 @@
         "https://corporate.mcdonalds.com/content/dam/sites/corp/nfl/categories/m-logo_108x108.jpg"
       );
       head.appendChild(meta);
+      const meta2 = document.createElement("meta");
+      meta2.setAttribute("twitter:image", "https://corporate.mcdonalds.com/content/dam/sites/corp/nfl/categories/m-logo_108x108.jpg");
+      head.appendChild(meta2);
     </script>
   </head>
   <body>
