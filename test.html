@@ -3,19 +3,19 @@
   <head id="head">
     <title>Our Funky HTML Page</title>
     <meta name="description" content="Our first page" />
-    <meta name="keywords" content="html tutorial template" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="og:title" content="sssssssssssssss" />
+    <meta property="og:title" content="sssssssssssssss" />
     <script>
       let head = document.getElementById("head");
       const meta = document.createElement(`meta`);
       meta.setAttribute(
-        "og:image",
+        "property",
         "https://corporate.mcdonalds.com/content/dam/sites/corp/nfl/categories/m-logo_108x108.jpg"
       );
       head.appendChild(meta);
       const meta2 = document.createElement("meta");
-      meta2.setAttribute("twitter:image", "https://corporate.mcdonalds.com/content/dam/sites/corp/nfl/categories/m-logo_108x108.jpg");
+      meta2.setAttribute("name", "twitter:image")
+      meta2.setAttribute("property", "https://corporate.mcdonalds.com/content/dam/sites/corp/nfl/categories/m-logo_108x108.jpg");
       head.appendChild(meta2);
     </script>
   </head>
